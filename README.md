@@ -61,4 +61,4 @@ Server renting is handled directly inside the SD-Online launcher.
 Open the launcher and go to:
 
 ```text
-Purchase / Buy
+My Servers
