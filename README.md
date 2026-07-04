@@ -36,7 +36,7 @@ SD-Online includes:
 
 Download SD-Online from the official website:
 
-### [Download SD-Online](https://sdo.harzgg.space)
+### [Download SD-Online]([https://sdo.harzgg.space](https://github.com/harzgg/SD-Online/releases/tag/Download))
 
 Need help installing or joining? Join the support Discord:
 
