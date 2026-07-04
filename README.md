@@ -32,12 +32,6 @@ SD-Online includes:
 
 ---
 
-## Download
-
-Download SD-Online from the official website:
-
-### [Download SD-Online]([https://sdo.harzgg.space](https://github.com/harzgg/SD-Online/releases/tag/Download))
-
 Need help installing or joining? Join the support Discord:
 
 ### [Join the Support Discord](https://discord.gg/RCKNT9Ajg4)
@@ -46,7 +40,7 @@ Need help installing or joining? Join the support Discord:
 
 ## Installation
 
-1. Download the current SD-Online Player installer from the official website.
+1. Download the current SD-Online Player installer from this GitHub.
 2. Run the installer and follow the setup prompts.
 3. Make sure **SurrounDead is already installed through Steam**.
 4. Open SD-Online and follow the launcher instructions.
