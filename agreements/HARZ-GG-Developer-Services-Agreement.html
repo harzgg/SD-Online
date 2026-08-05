@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HARZ.GG / SD-Online — Developer Services Agreement</title>
+  <style>
+    :root {
+      --ink: #12141a;
+      --muted: #3d4450;
+      --rule: #c8ccd4;
+      --accent: #1a2a4a;
+      --paper: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    @page {
+      size: Letter;
+      margin: 0.75in;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #e8eaef;
+      font-family: "Georgia", "Times New Roman", Times, serif;
+      font-size: 11pt;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 8.5in;
+      margin: 1.5rem auto;
+      padding: 0.75in;
+      background: var(--paper);
+      box-shadow: 0 8px 28px rgba(18, 20, 26, 0.12);
+    }
+
+    header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .brand {
+      font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .doc-title {
+      margin: 0.35rem 0 0;
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .meta {
+      margin-top: 0.85rem;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .meta p { margin: 0.2rem 0; }
+
+    .parties {
+      margin: 1rem 0 1.25rem;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid var(--rule);
+      background: #f7f8fa;
+    }
+
+    .parties p { margin: 0.25rem 0; }
+
+    h2 {
+      font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 1.35rem 0 0.45rem;
+      border-bottom: 1px solid var(--rule);
+      padding-bottom: 0.2rem;
+    }
+
+    p, li { color: var(--ink); }
+    p { margin: 0.45rem 0; }
+
+    ul {
+      margin: 0.35rem 0 0.55rem;
+      padding-left: 1.25rem;
+    }
+
+    li { margin: 0.25rem 0; }
+
+    .note {
+      margin-top: 1.25rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .sig-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .sig-block {
+      border-top: 1px solid var(--rule);
+      padding-top: 0.85rem;
+    }
+
+    .sig-block h3 {
+      margin: 0 0 0.85rem;
+      font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--accent);
+    }
+
+    .sig-line {
+      margin: 0.85rem 0;
+      font-size: 0.95rem;
+    }
+
+    .sig-line .label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 0.35rem;
+      font-family: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .sig-line .blank {
+      display: block;
+      border-bottom: 1px solid var(--ink);
+      min-height: 1.5rem;
+      width: 100%;
+    }
+
+    .sig-line.signature .blank {
+      min-height: 2.25rem;
+    }
+
+    @media print {
+      body { background: white; }
+      .page {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        max-width: none;
+      }
+      .no-print { display: none !important; }
+    }
+
+    .toolbar {
+      max-width: 8.5in;
+      margin: 1rem auto 0;
+      padding: 0 0.5rem;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    .toolbar a {
+      color: var(--accent);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar no-print">
+    <p>
+      Print or Save as PDF (Ctrl/Cmd+P), then upload to
+      <a href="https://sign.dropbox.com/" target="_blank" rel="noopener">Dropbox Sign</a>
+      or DocuSign to request signatures from Owner and Developer.
+    </p>
+  </div>
+
+  <article class="page">
+    <header>
+      <p class="brand">HARZ.GG / SD-Online Platform</p>
+      <h1 class="doc-title">Developer Services Agreement</h1>
+      <div class="meta">
+        <p><strong>Effective Date:</strong> ______________________</p>
+      </div>
+    </header>
+
+    <div class="parties">
+      <p>This Developer Services Agreement (“Agreement”) is made between:</p>
+      <p><strong>Owner:</strong> HARZ.GG / Spencer Harz</p>
+      <p><strong>Developer:</strong> V</p>
+    </div>
+
+    <h2>1. Scope of Work</h2>
+    <p>
+      Developer agrees to provide software development services for the SD-Online Platform (“Platform”),
+      including but not limited to coding, debugging, feature development, security improvements,
+      maintenance, and any additional tasks assigned by Owner.
+    </p>
+
+    <h2>2. Confidentiality &amp; Security Requirements</h2>
+    <p>
+      Developer acknowledges they will have access to sensitive and confidential information, including
+      but not limited to:
+    </p>
+    <ul>
+      <li>Platform passwords</li>
+      <li>SSH keys</li>
+      <li>API keys</li>
+      <li>Server credentials</li>
+      <li>Internal documentation</li>
+      <li>Business strategies, communications, and private data</li>
+    </ul>
+    <p>Developer agrees to the following:</p>
+    <ul>
+      <li>No disclosure of any confidential information to any third party.</li>
+      <li>No copying, storing, screenshotting, forwarding, or reusing credentials or confidential data.</li>
+      <li>No sharing of access keys, passwords, or platform-related information.</li>
+      <li>Immediate reporting of any suspected vulnerabilities, breaches, or unauthorized access.</li>
+      <li>Strict adherence to all security instructions provided by Owner.</li>
+    </ul>
+    <p>
+      Any disclosure, mishandling, negligence, or unauthorized use of credentials or confidential
+      information that results in — or could reasonably result in — a security risk, breach, data loss,
+      platform downtime, or financial harm may result in:
+    </p>
+    <ul>
+      <li>Immediate termination</li>
+      <li>Revocation of access</li>
+      <li>Legal action, including civil court proceedings</li>
+    </ul>
+
+    <h2>3. Intellectual Property Ownership</h2>
+    <p>
+      All code, assets, designs, documentation, and work produced by Developer for HARZ.GG are the
+      exclusive property of Owner.
+    </p>
+    <p>Developer agrees:</p>
+    <ul>
+      <li>All rights are assigned to Owner.</li>
+      <li>Developer may not reuse, resell, repurpose, or distribute any part of the work.</li>
+      <li>Developer may not claim ownership of any work created under this Agreement.</li>
+    </ul>
+
+    <h2>4. Compensation</h2>
+    <p>
+      Developer will receive commission percentages, bonuses, or other performance-based rewards as
+      determined by Owner. Compensation may be adjusted as the Platform grows or project needs change.
+    </p>
+
+    <h2>5. Independent Contractor Status</h2>
+    <p>
+      Developer is an independent contractor, not an employee. Developer is responsible for their own
+      taxes, equipment, and work environment.
+    </p>
+
+    <h2>6. Non-Competition &amp; Non-Interference</h2>
+    <p>Developer agrees not to:</p>
+    <ul>
+      <li>Build or assist in building any competing platform</li>
+      <li>Interfere with HARZ.GG operations</li>
+      <li>Attempt to harm the Platform, business, or reputation</li>
+    </ul>
+    <p>
+      These restrictions apply during the Agreement and for 12 months after termination.
+    </p>
+
+    <h2>7. Termination</h2>
+    <p>Owner may terminate this Agreement at any time if Developer:</p>
+    <ul>
+      <li>Violates confidentiality</li>
+      <li>Mishandles credentials</li>
+      <li>Causes or risks a security breach</li>
+      <li>Fails to complete assigned work</li>
+      <li>Acts against the interests of HARZ.GG</li>
+    </ul>
+    <p>
+      Upon termination, Developer must immediately return all credentials, files, code, documentation,
+      and access.
+    </p>
+
+    <h2>8. Liability</h2>
+    <p>Developer may be held financially responsible for damages caused by:</p>
+    <ul>
+      <li>Negligence</li>
+      <li>Credential leaks</li>
+      <li>Unauthorized access</li>
+      <li>Intentional harm</li>
+      <li>Security breaches resulting from Developer’s actions</li>
+    </ul>
+
+    <h2>9. Governing Law</h2>
+    <p>This Agreement is governed by the laws of the State of Kentucky.</p>
+
+    <h2>10. Acceptance &amp; Signatures</h2>
+    <p>
+      By signing below, both parties acknowledge that they understand and agree to all terms of this
+      Agreement.
+    </p>
+
+    <div class="sig-grid">
+      <div class="sig-block">
+        <h3>Owner (HARZ.GG / Spencer Harz)</h3>
+        <div class="sig-line signature">
+          <span class="label">Signature</span>
+          <span class="blank"></span>
+        </div>
+        <div class="sig-line">
+          <span class="label">Printed Name</span>
+          <span class="blank"></span>
+        </div>
+        <div class="sig-line">
+          <span class="label">Date</span>
+          <span class="blank"></span>
+        </div>
+      </div>
+
+      <div class="sig-block">
+        <h3>Developer (V)</h3>
+        <div class="sig-line signature">
+          <span class="label">Signature</span>
+          <span class="blank"></span>
+        </div>
+        <div class="sig-line">
+          <span class="label">Printed Name</span>
+          <span class="blank"></span>
+        </div>
+        <div class="sig-line">
+          <span class="label">Date</span>
+          <span class="blank"></span>
+        </div>
+      </div>
+    </div>
+
+    <p class="note">
+      This document is provided for operational use by HARZ.GG. It is not legal advice. Consider having
+      a Kentucky-licensed attorney review before relying on it for enforcement.
+    </p>
+  </article>
+</body>
+</html>
