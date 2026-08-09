@@ -157,7 +157,7 @@ export default function App() {
               {cartCount > 0 ? <span className="nav-cart-count">{cartCount}</span> : null}
             </a>
             <button
-              className="nav-toggle"
+              className={`nav-toggle ${menuOpen ? "is-open" : ""}`}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((v) => !v)}

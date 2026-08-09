@@ -95,19 +95,38 @@
 }
 
 .nav-toggle {
+  position: relative;
   width: 2.25rem;
   height: 2.25rem;
-  display: grid;
-  place-content: center;
-  gap: 6px;
 }
 
 .nav-toggle span {
+  position: absolute;
+  left: 50%;
   display: block;
   width: 1.25rem;
   height: 1.5px;
   background: var(--ink);
-  transition: transform 0.35s var(--ease);
+  transform: translateX(-50%);
+  transition: top 0.35s var(--ease), transform 0.35s var(--ease);
+}
+
+.nav-toggle span:first-child {
+  top: calc(50% - 4px);
+}
+
+.nav-toggle span:last-child {
+  top: calc(50% + 4px);
+}
+
+.nav-toggle.is-open span:first-child {
+  top: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.nav-toggle.is-open span:last-child {
+  top: 50%;
+  transform: translateX(-50%) rotate(-45deg);
 }
 
 .mobile-menu {
