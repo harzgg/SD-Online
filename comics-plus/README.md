@@ -1,4 +1,4 @@
-# COMICS PLUS+ — HTML Shop Template
+# COMICS PLUS! — HTML Shop Template
 
 Static comics & games storefront for desktop testing.
 
