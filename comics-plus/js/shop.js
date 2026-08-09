@@ -179,7 +179,7 @@ function addToCart(id, qty = 1) {
   if (existing) existing.qty += qty;
   else cart.push({ id, qty });
   saveCart(cart);
-  showToast("Added to cart");
+  showToast("Added to cart — BAM!");
 }
 
 function setQty(id, qty) {
