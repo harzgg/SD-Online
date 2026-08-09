@@ -83,10 +83,34 @@ function Reveal({
   );
 }
 
+function Crown({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      className={`logo-crown ${className}`.trim()}
+      viewBox="0 0 120 72"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        fill="#C6A75E"
+        d="M10 54 L18 22 L38 42 L60 10 L82 42 L102 22 L110 54 Z"
+      />
+      <rect x="8" y="52" width="104" height="12" rx="1.5" fill="#E0C57A" />
+      <circle cx="18" cy="22" r="5" fill="#EED9A0" />
+      <circle cx="60" cy="10" r="6.5" fill="#F3E2A8" />
+      <circle cx="102" cy="22" r="5" fill="#EED9A0" />
+      <circle cx="38" cy="42" r="3.5" fill="#9A7D3B" />
+      <circle cx="82" cy="42" r="3.5" fill="#9A7D3B" />
+      <circle cx="60" cy="58" r="3" fill="#050505" opacity="0.35" />
+    </svg>
+  );
+}
+
 function Logo({ className = "" }: { className?: string }) {
   return (
     <span className={`logo ${className}`.trim()} aria-label="PRYME">
-      PRYME
+      <Crown />
+      <span className="logo-word">PRYME</span>
     </span>
   );
 }

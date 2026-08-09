@@ -1,13 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
   <rect width="64" height="64" fill="#050505"/>
+  <path fill="#C6A75E" d="M14 26l4-12 8 8 6-12 6 12 8-8 4 12v4H14v-4z"/>
+  <rect x="13" y="30" width="38" height="5" rx="1" fill="#E0C57A"/>
   <text
     x="32"
-    y="42"
+    y="54"
     text-anchor="middle"
     font-family="Arial Black, Helvetica Neue, sans-serif"
     font-weight="900"
-    font-size="28"
-    letter-spacing="-1"
-    fill="#C6A75E"
+    font-size="18"
+    letter-spacing="1"
+    fill="#FAF8F2"
   >P</text>
 </svg>
