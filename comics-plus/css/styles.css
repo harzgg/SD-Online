@@ -1,4 +1,4 @@
-/* COMICS PLUS+ — Yellow / White / Gray / Black template */
+/* COMICS PLUS! — Yellow / White / Gray / Black template */
 
 :root {
   --yellow: #ffe600;
@@ -26,7 +26,7 @@
   --space-2xl: 5.5rem;
 
   --max: 1180px;
-  --nav-h: 4.25rem;
+  --nav-h: 4.75rem;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
   --radius: 2px;
 }
@@ -114,19 +114,16 @@ p {
 }
 
 .logo {
-  font-family: var(--font-brand);
-  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
-  letter-spacing: 0.02em;
-  color: var(--yellow);
   display: flex;
-  align-items: baseline;
-  gap: 0.15em;
-  white-space: nowrap;
+  align-items: center;
+  flex-shrink: 0;
+  line-height: 0;
 }
 
-.logo span {
-  color: var(--white);
-  font-size: 0.85em;
+.logo img {
+  height: 2.85rem;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -310,18 +307,18 @@ p {
   max-width: 36rem;
 }
 
-.brand-mark {
-  font-family: var(--font-brand);
-  font-size: clamp(2.8rem, 9vw, 5.5rem);
-  color: var(--yellow);
-  line-height: 0.9;
-  margin-bottom: 0.35em;
-  text-shadow: 4px 4px 0 var(--black);
+.hero-logo {
+  width: min(100%, 34rem);
+  height: auto;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.55));
   animation: slamIn 0.7s var(--ease) both;
 }
 
-.brand-mark .plus {
-  color: var(--white);
+.footer-logo {
+  width: min(100%, 16rem);
+  height: auto;
+  margin-bottom: 0.85rem;
 }
 
 .hero-headline {
@@ -842,9 +839,6 @@ textarea:focus {
 }
 
 .footer-brand {
-  font-family: var(--font-brand);
-  color: var(--yellow);
-  font-size: 1.35rem;
   margin-bottom: 0.75rem;
 }
 

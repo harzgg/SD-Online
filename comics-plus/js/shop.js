@@ -1,4 +1,4 @@
-/* COMICS PLUS+ — Catalog + Cart (localStorage demo shop) */
+/* COMICS PLUS! — Catalog + Cart (localStorage demo shop) */
 
 const PRODUCTS = [
   {
@@ -83,12 +83,12 @@ const PRODUCTS = [
   },
   {
     id: "m-logo-tee",
-    title: "COMICS PLUS+ Tee",
+    title: "COMICS PLUS! Tee",
     category: "merch",
     type: "Apparel",
     price: 28.0,
     tag: "Merch",
-    desc: "Heavyweight black tee with yellow brand slam print. Soft hand feel, loud presence.",
+    desc: "Heavyweight black tee with the official COMICS PLUS! logo print. Soft hand feel, loud presence.",
     colors: ["#0a0a08", "#ffe600", "#ffffff"],
   },
   {
@@ -98,18 +98,38 @@ const PRODUCTS = [
     type: "Print",
     price: 22.0,
     tag: "Limited",
-    desc: "Three 18×24 prints: Shadow Circuit, Blast Arena, and the COMICS PLUS+ monogram.",
+    desc: "Three 18×24 prints: Shadow Circuit, Blast Arena, and the COMICS PLUS! logo.",
     colors: ["#ffe600", "#1a1a18", "#b8b8b0"],
   },
   {
     id: "m-enamel-pin",
-    title: "Plus+ Enamel Pin",
+    title: "PLUS! Enamel Pin",
     category: "merch",
     type: "Accessory",
     price: 12.0,
     tag: "Merch",
-    desc: "Hard enamel pin with yellow fill and black outline. Locking clasp included.",
+    desc: "Hard enamel pin with the COMICS PLUS! mark. Locking clasp included.",
     colors: ["#ffe600", "#0a0a08", "#e8e8e4"],
+  },
+  {
+    id: "t-robot-80s",
+    title: "Retro Robot Figure",
+    category: "toys",
+    type: "Vintage Toy",
+    price: 34.99,
+    tag: "Vintage",
+    desc: "Wind-up tin robot restock. Chrome chest plate, yellow eyes, shelf-ready.",
+    colors: ["#6e6e66", "#ffe600", "#ffffff"],
+  },
+  {
+    id: "t-castle-set",
+    title: "Micro Castle Set",
+    category: "toys",
+    type: "Vintage Toy",
+    price: 42.0,
+    tag: "Rare",
+    desc: "Complete boxed micro castle with knights. Great display piece for collectors.",
+    colors: ["#1a1a18", "#b8b8b0", "#ffe600"],
   },
   {
     id: "c-daybreak-01",

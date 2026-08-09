@@ -2,7 +2,7 @@
 
 Static comics & games storefront for desktop testing.
 
-**Brand:** COMICS PLUS+  
+**Brand:** COMICS PLUS! (logo in `assets/logo.svg`)  
 **Palette:** Yellow `#FFE600` · White `#FFFFFF` · Gray `#6E6E66` · Black `#0A0A08`
 
 ## Quick start
