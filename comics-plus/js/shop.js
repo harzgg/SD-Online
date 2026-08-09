@@ -9,7 +9,7 @@ const PRODUCTS = [
     price: 4.99,
     tag: "New",
     desc: "A neon noir origin issue. Detective Mara Vale plugs into the underground grid and finds a city that bites back.",
-    colors: ["#1a1a18", "#ffe600", "#6e6e66"],
+    colors: ["#0a3d9e", "#ffe600", "#6e6e66"],
   },
   {
     id: "c-iron-12",
@@ -19,7 +19,7 @@ const PRODUCTS = [
     price: 3.99,
     tag: "Bestseller",
     desc: "The docks erupt as rival crews clash over a relic that rewrites memories. Double-sized finale.",
-    colors: ["#2a2a20", "#ffffff", "#ffe600"],
+    colors: ["#1566b8", "#ffffff", "#ffe600"],
   },
   {
     id: "c-pulse-03",
@@ -29,7 +29,7 @@ const PRODUCTS = [
     price: 19.99,
     tag: "TPB",
     desc: "Collected arcs of the speedster crew racing across fractured timelines. Includes sketch gallery.",
-    colors: ["#111110", "#c9b400", "#e8e8e4"],
+    colors: ["#062a6e", "#c9b400", "#e8e8e4"],
   },
   {
     id: "c-void-07",
@@ -39,7 +39,7 @@ const PRODUCTS = [
     price: 4.49,
     tag: "Hot",
     desc: "Choir drones open a rift above the yellow district. Silent panels, loud consequences.",
-    colors: ["#0a0a08", "#b8b8b0", "#ffe600"],
+    colors: ["#062a6e", "#b8b8b0", "#ffe600"],
   },
   {
     id: "g-blast-arena",
@@ -49,7 +49,7 @@ const PRODUCTS = [
     price: 29.99,
     tag: "Digital",
     desc: "Local and online arena brawler. Smash panels, chain combos, unlock comic skins.",
-    colors: ["#ffe600", "#1a1a18", "#ffffff"],
+    colors: ["#ffe600", "#0a3d9e", "#ffffff"],
   },
   {
     id: "g-panel-quest",
@@ -59,7 +59,7 @@ const PRODUCTS = [
     price: 24.99,
     tag: "Indie",
     desc: "Turn-based RPG where every battle is a comic page. Flip panels to rewrite the fight.",
-    colors: ["#3a3a36", "#ffe600", "#f5f5f0"],
+    colors: ["#1e7fe0", "#ffe600", "#f5f5f0"],
   },
   {
     id: "g-ink-runners",
@@ -69,7 +69,7 @@ const PRODUCTS = [
     price: 19.99,
     tag: "New",
     desc: "Endless runner across living comic strips. Dodge ink spills, collect power glyphs.",
-    colors: ["#0a0a08", "#ffffff", "#ffe600"],
+    colors: ["#062a6e", "#ffffff", "#ffe600"],
   },
   {
     id: "g-frame-wars",
@@ -79,7 +79,7 @@ const PRODUCTS = [
     price: 39.99,
     tag: "Pre-order",
     desc: "Strategy title: draft heroes, build pages, and out-panel rival publishers.",
-    colors: ["#1a1a18", "#c9b400", "#6e6e66"],
+    colors: ["#0a3d9e", "#c9b400", "#6e6e66"],
   },
   {
     id: "m-logo-tee",
@@ -89,7 +89,7 @@ const PRODUCTS = [
     price: 28.0,
     tag: "Merch",
     desc: "Heavyweight black tee with the official COMICS PLUS! logo print. Soft hand feel, loud presence.",
-    colors: ["#0a0a08", "#ffe600", "#ffffff"],
+    colors: ["#062a6e", "#ffe600", "#ffffff"],
   },
   {
     id: "m-poster-set",
@@ -99,7 +99,7 @@ const PRODUCTS = [
     price: 22.0,
     tag: "Limited",
     desc: "Three 18×24 prints: Shadow Circuit, Blast Arena, and the COMICS PLUS! logo.",
-    colors: ["#ffe600", "#1a1a18", "#b8b8b0"],
+    colors: ["#ffe600", "#0a3d9e", "#b8b8b0"],
   },
   {
     id: "m-enamel-pin",
@@ -109,7 +109,7 @@ const PRODUCTS = [
     price: 12.0,
     tag: "Merch",
     desc: "Hard enamel pin with the COMICS PLUS! mark. Locking clasp included.",
-    colors: ["#ffe600", "#0a0a08", "#e8e8e4"],
+    colors: ["#ffe600", "#062a6e", "#e8e8e4"],
   },
   {
     id: "t-robot-80s",
@@ -129,7 +129,7 @@ const PRODUCTS = [
     price: 42.0,
     tag: "Rare",
     desc: "Complete boxed micro castle with knights. Great display piece for collectors.",
-    colors: ["#1a1a18", "#b8b8b0", "#ffe600"],
+    colors: ["#0a3d9e", "#b8b8b0", "#ffe600"],
   },
   {
     id: "c-daybreak-01",
@@ -139,7 +139,7 @@ const PRODUCTS = [
     price: 5.99,
     tag: "Variant",
     desc: "Team book launch with yellow foil variant cover. First appearance of Captain Static.",
-    colors: ["#ffffff", "#ffe600", "#1a1a18"],
+    colors: ["#ffffff", "#ffe600", "#0a3d9e"],
   },
 ];
 
@@ -232,9 +232,9 @@ function coverSVG(product) {
     </defs>
     <rect width="300" height="400" fill="url(#g-${product.id})"/>
     <rect width="300" height="400" fill="url(#ht-${product.id})"/>
-    <polygon points="0,320 300,260 300,400 0,400" fill="#0a0a08" opacity="0.85"/>
+    <polygon points="0,320 300,260 300,400 0,400" fill="#062a6e" opacity="0.85"/>
     <rect x="18" y="18" width="70" height="18" fill="#ffe600"/>
-    <text x="28" y="31" font-family="Arial Black, sans-serif" font-size="10" fill="#0a0a08">${product.type.toUpperCase()}</text>
+    <text x="28" y="31" font-family="Arial Black, sans-serif" font-size="10" fill="#062a6e">${product.type.toUpperCase()}</text>
     <text x="24" y="120" font-family="Impact, Arial Black, sans-serif" font-size="92" fill="#ffffff" opacity="0.18">${initial}</text>
     <text x="24" y="360" font-family="Impact, Arial Black, sans-serif" font-size="22" fill="#ffe600">${escapeXml(product.title.split(" ")[0].toUpperCase())}</text>
     <text x="24" y="382" font-family="Arial, sans-serif" font-size="12" fill="#e8e8e4">${escapeXml(product.title)}</text>
