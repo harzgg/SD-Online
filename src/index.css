@@ -1,17 +1,21 @@
 :root {
-  --bg: #090909;
-  --bg-elevated: #121212;
-  --bg-soft: #1a1a1a;
-  --ink: #f4f4f0;
-  --ink-muted: #a8a8a0;
-  --ink-dim: #6e6e68;
-  --line: rgba(244, 244, 240, 0.12);
-  --accent: #e8e4d8;
-  --focus: #f4f4f0;
+  --bg: #050505;
+  --bg-elevated: #0d0d0d;
+  --bg-soft: #161616;
+  --ink: #faf8f2;
+  --ink-muted: #b7b1a3;
+  --ink-dim: #7a7468;
+  --gold: #c6a75e;
+  --gold-bright: #e0c57a;
+  --gold-deep: #9a7d3b;
+  --line: rgba(198, 167, 94, 0.28);
+  --line-soft: rgba(250, 248, 242, 0.1);
+  --accent: var(--gold);
+  --focus: var(--gold-bright);
   --danger: #c45c4a;
 
   --font-brand: "Archivo Black", "Arial Black", sans-serif;
-  --font-display: "Syne", sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Manrope", sans-serif;
 
   --space-1: 0.5rem;
@@ -57,7 +61,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.045;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
@@ -108,19 +112,20 @@ ul {
   display: block;
   margin-bottom: var(--space-2);
   font-family: var(--font-body);
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--ink-dim);
+  color: var(--gold);
 }
 
 .section-title {
   font-family: var(--font-display);
-  font-weight: 700;
-  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 500;
+  font-size: clamp(2.35rem, 5vw, 3.75rem);
   line-height: 1.05;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.01em;
+  color: var(--ink);
 }
 
 .section-copy {
@@ -137,14 +142,14 @@ ul {
   justify-content: center;
   gap: 0.6rem;
   min-height: 3rem;
-  padding: 0.85rem 1.6rem;
+  padding: 0.85rem 1.7rem;
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   transition: transform 0.35s var(--ease), background 0.35s var(--ease),
-    color 0.35s var(--ease), border-color 0.35s var(--ease);
+    color 0.35s var(--ease), border-color 0.35s var(--ease), box-shadow 0.35s var(--ease);
 }
 
 .btn:hover {
@@ -152,23 +157,26 @@ ul {
 }
 
 .btn-primary {
-  background: var(--ink);
-  color: var(--bg);
+  background: linear-gradient(180deg, var(--gold-bright) 0%, var(--gold) 55%, var(--gold-deep) 100%);
+  color: #0a0a0a;
+  border: 1px solid var(--gold-deep);
 }
 
 .btn-primary:hover {
-  background: #ffffff;
+  background: linear-gradient(180deg, #edd9a0 0%, var(--gold-bright) 50%, var(--gold) 100%);
+  box-shadow: 0 10px 28px rgba(198, 167, 94, 0.22);
 }
 
 .btn-ghost {
-  border: 1px solid var(--line);
+  border: 1px solid var(--gold);
   background: transparent;
   color: var(--ink);
 }
 
 .btn-ghost:hover {
-  border-color: rgba(244, 244, 240, 0.35);
-  background: rgba(244, 244, 240, 0.04);
+  border-color: var(--gold-bright);
+  color: var(--gold-bright);
+  background: rgba(198, 167, 94, 0.06);
 }
 
 /* Reveal motion */
