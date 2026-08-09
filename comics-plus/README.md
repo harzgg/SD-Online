@@ -3,7 +3,7 @@
 Static comics & games storefront for desktop testing.
 
 **Brand:** COMICS PLUS!  
-**Palette:** Yellow `#FFE600` · Gray `#6B7380` · White `#FFFFFF` · Blue `#1E7FE0`
+**Palette:** Yellow `#FFE600` · Gray `#6E6B63` · White `#FFFFFF` · Blue accent `#2F6FD6` — comic fonts (Bangers / Comic Neue)
 
 ## Quick start
 
