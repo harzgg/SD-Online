@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comics — COMICS PLUS+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">COMICS <span>PLUS+</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="comics.html" class="active">Comics</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="cart-btn" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <div class="container">
+        <h1>Comics</h1>
+        <p>Single issues, trades, and foil variants — yellow flash on black panels.</p>
+      </div>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="product-grid" data-shop-grid data-filter="comics"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <span>© 2026 COMICS PLUS+</span>
+      <a href="shop.html">Full shop</a>
+    </div>
+  </footer>
+  <script src="js/shop.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // comics page pre-filters via data-filter on grid; shop.js initShopPage handles it
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#0a0a08"/>
+  <polygon points="80,500 220,120 360,500" fill="#3a3a36" stroke="#ffe600" stroke-width="6"/>
+  <rect x="420" y="140" width="300" height="180" fill="#1a1a18" stroke="#ffffff" stroke-width="6"/>
+  <rect x="420" y="360" width="300" height="140" fill="#2a2400" stroke="#ffe600" stroke-width="6"/>
+  <text x="450" y="250" font-family="Impact, sans-serif" font-size="48" fill="#ffe600">PLAY</text>
+  <text x="450" y="440" font-family="Impact, sans-serif" font-size="36" fill="#ffffff">LEVEL UP</text>
+  <circle cx="160" cy="280" r="36" fill="#ffe600"/>
+</svg>

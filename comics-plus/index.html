@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COMICS PLUS+ — Comics, Games &amp; Shop</title>
+  <meta name="description" content="COMICS PLUS+ template shop for comics, games, and merch. Yellow, white, gray, and black.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">COMICS <span>PLUS+</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="comics.html">Comics</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="cart-btn" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-halftone" aria-hidden="true"></div>
+      <div class="hero-slash" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="brand-mark">COMICS <span class="plus">PLUS+</span></p>
+        <h1 class="hero-headline">Comics. Games. Straight to your cart.</h1>
+        <p class="hero-lede">A bold yellow-and-ink shop template for testing full storefront flows — browse, bag, and checkout.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="shop.html">Shop now</a>
+          <a class="btn btn-ghost" href="comics.html">Browse comics</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cat-strip">
+      <a class="cat-panel cat-comics" href="comics.html">
+        <div class="cover" role="img" aria-label="Comics panel artwork"></div>
+        <h2>Comics</h2>
+        <p>Single issues, trades, and variants with punchy covers.</p>
+        <span class="btn btn-primary btn-sm">Enter aisle</span>
+      </a>
+      <a class="cat-panel cat-games" href="games.html">
+        <div class="cover" role="img" aria-label="Games panel artwork"></div>
+        <h2>Games</h2>
+        <p>Digital drops and boxed titles built for comic fans.</p>
+        <span class="btn btn-primary btn-sm">Play catalog</span>
+      </a>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Featured drops</h2>
+          <p>Fresh ink and playable titles ready for your demo cart.</p>
+        </div>
+        <div class="product-grid" data-featured="all" data-limit="4"></div>
+        <p style="margin-top:2rem;">
+          <a class="btn btn-dark" href="shop.html">View full shop</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-yellow">
+      <div class="container promo-band">
+        <div class="reveal">
+          <h2>Free shipping over $50</h2>
+          <p style="margin:0;max-width:28rem;">Template checkout calculates shipping, tax, and totals in the browser — no backend required for local testing.</p>
+        </div>
+        <div class="reveal">
+          <a class="btn btn-dark" href="shop.html">Build your haul</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Hot games</h2>
+          <p>Arena smashers, panel RPGs, and pre-orders.</p>
+        </div>
+        <div class="product-grid" data-featured="games" data-limit="4"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">COMICS PLUS+</div>
+        <p>Yellow ink. White space. Gray grit. Black panels. A static HTML shop template for desktop testing.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All products</a></li>
+          <li><a href="comics.html">Comics</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="shop.html">Merch</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Palette</h4>
+        <ul>
+          <li>Yellow #FFE600</li>
+          <li>White #FFFFFF</li>
+          <li>Gray #6E6E66</li>
+          <li>Black #0A0A08</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 COMICS PLUS+ — HTML template for testing</span>
+      <span>Open index.html in your browser</span>
+    </div>
+  </footer>
+
+  <script src="js/shop.js"></script>
+</body>
+</html>

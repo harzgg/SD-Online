@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart — COMICS PLUS+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">COMICS <span>PLUS+</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="comics.html">Comics</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="cart-btn" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <div class="container">
+        <h1>Your cart</h1>
+        <p>Review quantities, remove items, then head to checkout.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="cart-empty" data-cart-empty hidden>
+        <h2>Cart is empty</h2>
+        <p>Grab comics, games, or merch from the shop.</p>
+        <a class="btn btn-primary" href="shop.html">Browse shop</a>
+      </div>
+
+      <div class="cart-layout" data-cart-layout hidden>
+        <div style="overflow-x:auto;">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody data-cart-body></tbody>
+          </table>
+        </div>
+        <aside class="cart-summary">
+          <h2>Summary</h2>
+          <div class="summary-row"><span>Subtotal</span><span data-subtotal>$0.00</span></div>
+          <div class="summary-row"><span>Shipping</span><span data-shipping>$0.00</span></div>
+          <div class="summary-row"><span>Tax (8%)</span><span data-tax>$0.00</span></div>
+          <div class="summary-row summary-total"><span>Total</span><span data-total>$0.00</span></div>
+          <p style="font-size:0.8rem;color:#b8b8b0;margin:1rem 0;">Free shipping on orders $50+.</p>
+          <a class="btn btn-primary" href="checkout.html" style="width:100%;">Checkout</a>
+          <a class="btn btn-ghost" href="shop.html" style="width:100%;margin-top:0.65rem;border-color:#6e6e66;">Keep shopping</a>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" style="margin-top:3rem;">
+    <div class="container footer-bottom">
+      <span>© 2026 COMICS PLUS+</span>
+      <span>Demo cart — localStorage only</span>
+    </div>
+  </footer>
+  <script src="js/shop.js"></script>
+</body>
+</html>

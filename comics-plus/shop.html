@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop — COMICS PLUS+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Ops+One&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">COMICS <span>PLUS+</span></a>
+      <button class="menu-toggle" type="button" aria-label="Menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="comics.html">Comics</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a class="cart-btn" href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-banner">
+      <div class="container">
+        <h1>Online shop</h1>
+        <p>Filter comics, games, and merch. Add items to your cart and run the full checkout demo.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="shop-toolbar">
+          <div class="filters">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="comics">Comics</button>
+            <button class="filter-btn" type="button" data-filter="games">Games</button>
+            <button class="filter-btn" type="button" data-filter="merch">Merch</button>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;">
+            <div class="search-wrap">
+              <input type="search" placeholder="Search products…" data-search aria-label="Search products">
+            </div>
+            <div class="sort-wrap">
+              <select data-sort aria-label="Sort products">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low to high</option>
+                <option value="price-desc">Price: High to low</option>
+                <option value="name">Name</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="product-grid" data-shop-grid data-filter="all"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">COMICS PLUS+</div>
+        <p>Full catalog template with client-side cart powered by localStorage.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">All products</a></li>
+          <li><a href="comics.html">Comics</a></li>
+          <li><a href="games.html">Games</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Orders</h4>
+        <ul>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Note</h4>
+        <p>Demo storefront — no real payments.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 COMICS PLUS+</span>
+      <span>Template for desktop testing</span>
+    </div>
+  </footer>
+  <script src="js/shop.js"></script>
+</body>
+</html>
