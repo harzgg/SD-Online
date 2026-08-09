@@ -12,7 +12,7 @@
 }
 
 .logo-crown {
-  width: 0.85em;
+  width: 0.95em;
   height: auto;
   flex-shrink: 0;
   filter: drop-shadow(0 2px 8px rgba(198, 167, 94, 0.35));
@@ -60,7 +60,7 @@
 }
 
 .nav-brand .logo-crown {
-  width: 0.95em;
+  width: 1.05em;
 }
 
 .nav-mark {
@@ -262,7 +262,7 @@
 }
 
 .hero-brand .logo-crown {
-  width: 0.72em;
+  width: 0.82em;
   animation: crown-gleam 3.6s var(--ease) infinite;
 }
 

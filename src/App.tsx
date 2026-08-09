@@ -87,21 +87,135 @@ function Crown({ className = "" }: { className?: string }) {
   return (
     <svg
       className={`logo-crown ${className}`.trim()}
-      viewBox="0 0 120 72"
+      viewBox="0 0 160 100"
       xmlns="http://www.w3.org/2000/svg"
       aria-hidden="true"
     >
+      {/* Soft under-glow */}
+      <ellipse cx="80" cy="92" rx="58" ry="5" fill="#C6A75E" opacity="0.18" />
+
+      {/* Outer crown body */}
+      <path
+        fill="#9A7D3B"
+        d="M16 70 L22 34 L40 52 L52 28 L68 48 L80 14 L92 48 L108 28 L120 52 L138 34 L144 70 Z"
+      />
+      {/* Mid highlight plate */}
       <path
         fill="#C6A75E"
-        d="M10 54 L18 22 L38 42 L60 10 L82 42 L102 22 L110 54 Z"
+        d="M20 68 L26 38 L42 54 L54 32 L70 50 L80 20 L90 50 L106 32 L118 54 L134 38 L140 68 Z"
       />
-      <rect x="8" y="52" width="104" height="12" rx="1.5" fill="#E0C57A" />
-      <circle cx="18" cy="22" r="5" fill="#EED9A0" />
-      <circle cx="60" cy="10" r="6.5" fill="#F3E2A8" />
-      <circle cx="102" cy="22" r="5" fill="#EED9A0" />
-      <circle cx="38" cy="42" r="3.5" fill="#9A7D3B" />
-      <circle cx="82" cy="42" r="3.5" fill="#9A7D3B" />
-      <circle cx="60" cy="58" r="3" fill="#050505" opacity="0.35" />
+      {/* Inner face */}
+      <path
+        fill="#E0C57A"
+        d="M28 66 L34 44 L46 56 L58 38 L72 54 L80 28 L88 54 L102 38 L114 56 L126 44 L132 66 Z"
+      />
+
+      {/* Arched bridges between peaks */}
+      <path
+        d="M26 40 Q42 56 54 34"
+        fill="none"
+        stroke="#EED9A0"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+      <path
+        d="M54 34 Q68 52 80 24"
+        fill="none"
+        stroke="#F3E2A8"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+      />
+      <path
+        d="M80 24 Q92 52 106 34"
+        fill="none"
+        stroke="#F3E2A8"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+      />
+      <path
+        d="M106 34 Q118 56 134 40"
+        fill="none"
+        stroke="#EED9A0"
+        strokeWidth="2.2"
+        strokeLinecap="round"
+      />
+
+      {/* Engraved side flourishes */}
+      <path
+        d="M30 58 Q40 50 48 58"
+        fill="none"
+        stroke="#9A7D3B"
+        strokeWidth="1.4"
+      />
+      <path
+        d="M112 58 Q120 50 130 58"
+        fill="none"
+        stroke="#9A7D3B"
+        strokeWidth="1.4"
+      />
+      <path
+        d="M58 60 Q80 50 102 60"
+        fill="none"
+        stroke="#9A7D3B"
+        strokeWidth="1.5"
+      />
+
+      {/* Center cross + orb */}
+      <circle cx="80" cy="18" r="5.5" fill="#F3E2A8" />
+      <circle cx="80" cy="18" r="2.8" fill="#9A7D3B" />
+      <rect x="78.2" y="4" width="3.6" height="10" rx="0.6" fill="#EED9A0" />
+      <rect x="74" y="7.2" width="12" height="3.2" rx="0.6" fill="#EED9A0" />
+
+      {/* Peak jewels */}
+      <circle cx="26" cy="36" r="5" fill="#EED9A0" />
+      <circle cx="26" cy="35" r="2.2" fill="#FAF8F2" opacity="0.75" />
+      <circle cx="54" cy="30" r="4.2" fill="#C6A75E" />
+      <circle cx="54" cy="29" r="1.7" fill="#F3E2A8" />
+      <circle cx="106" cy="30" r="4.2" fill="#C6A75E" />
+      <circle cx="106" cy="29" r="1.7" fill="#F3E2A8" />
+      <circle cx="134" cy="36" r="5" fill="#EED9A0" />
+      <circle cx="134" cy="35" r="2.2" fill="#FAF8F2" opacity="0.75" />
+
+      {/* Mid gems (darker cut stones) */}
+      <path fill="#7A5F2A" d="M42 54 L46 48 L50 54 L46 58 Z" />
+      <path fill="#E0C57A" d="M44.5 52 L46 49.5 L47.5 52 Z" />
+      <path fill="#7A5F2A" d="M70 52 L74 45 L78 52 L74 56 Z" />
+      <path fill="#F3E2A8" d="M72.6 50 L74 47 L75.4 50 Z" />
+      <path fill="#7A5F2A" d="M82 52 L86 45 L90 52 L86 56 Z" />
+      <path fill="#F3E2A8" d="M84.6 50 L86 47 L87.4 50 Z" />
+      <path fill="#7A5F2A" d="M110 54 L114 48 L118 54 L114 58 Z" />
+      <path fill="#E0C57A" d="M112.5 52 L114 49.5 L115.5 52 Z" />
+
+      {/* Crown band */}
+      <rect x="12" y="68" width="136" height="16" rx="2" fill="#C6A75E" />
+      <rect x="12" y="68" width="136" height="4" fill="#EED9A0" />
+      <rect x="12" y="80" width="136" height="4" fill="#9A7D3B" />
+      <rect
+        x="16"
+        y="72.5"
+        width="128"
+        height="7"
+        rx="1"
+        fill="none"
+        stroke="#F3E2A8"
+        strokeWidth="1.2"
+      />
+
+      {/* Band jewels */}
+      <circle cx="36" cy="76" r="3.2" fill="#FAF8F2" />
+      <circle cx="36" cy="75.2" r="1.2" fill="#E0C57A" />
+      <circle cx="58" cy="76" r="3.2" fill="#7A5F2A" />
+      <circle cx="58" cy="75.2" r="1.1" fill="#EED9A0" />
+      <circle cx="80" cy="76" r="3.8" fill="#FAF8F2" />
+      <circle cx="80" cy="75" r="1.5" fill="#C6A75E" />
+      <circle cx="102" cy="76" r="3.2" fill="#7A5F2A" />
+      <circle cx="102" cy="75.2" r="1.1" fill="#EED9A0" />
+      <circle cx="124" cy="76" r="3.2" fill="#FAF8F2" />
+      <circle cx="124" cy="75.2" r="1.2" fill="#E0C57A" />
+
+      {/* Rivets */}
+      <circle cx="20" cy="76" r="1.3" fill="#9A7D3B" />
+      <circle cx="140" cy="76" r="1.3" fill="#9A7D3B" />
     </svg>
   );
 }
