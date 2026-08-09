@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 140" fill="currentColor" role="img" aria-label="PRYME">
+  <path d="M0 12h86c38 0 62 20 62 52s-24 52-62 52H40v16H0V12zm40 28v48h44c18 0 28-9 28-24s-10-24-28-24H40z"/>
+  <path d="M172 12h84c36 0 58 18 58 48 0 22-12 38-34 44l40 28h-46l-36-28h-30v28h-36V12zm36 28v40h42c16 0 26-8 26-20s-10-20-26-20h-42z"/>
+  <path d="M348 12h44l36 62 36-62h44l-60 100h-40L348 12z"/>
+  <path d="M492 12h48l46 96 46-96h48v116h-38V48l-46 80h-20l-46-80v80h-38V12z"/>
+  <path d="M700 12h120v30H740v14h72v30h-72v14h80v30H700V12z"/>
+</svg>
