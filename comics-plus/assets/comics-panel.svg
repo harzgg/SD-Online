@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#ffe600"/>
+  <g stroke="#111110" stroke-width="6" fill="#ffffff">
+    <rect x="40" y="40" width="340" height="240"/>
+    <rect x="420" y="40" width="340" height="240"/>
+    <rect x="40" y="320" width="720" height="240"/>
+  </g>
+  <text x="70" y="180" font-family="Impact, sans-serif" font-size="64" fill="#111110">POW</text>
+  <text x="460" y="180" font-family="Impact, sans-serif" font-size="48" fill="#2f6fd6">ISSUE</text>
+  <text x="70" y="460" font-family="Impact, sans-serif" font-size="56" fill="#111110">NEW ARC</text>
+  <circle cx="620" cy="440" r="10" fill="#111110"/>
+  <circle cx="650" cy="440" r="10" fill="#111110"/>
+  <circle cx="680" cy="440" r="10" fill="#111110"/>
+</svg>
