@@ -1,4 +1,5 @@
 import {
+  useCallback,
   useEffect,
   useRef,
   useState,
@@ -229,6 +230,66 @@ function Logo({ className = "" }: { className?: string }) {
   );
 }
 
+function IntroSplash({ onDone }: { onDone: () => void }) {
+  const [phase, setPhase] = useState<"enter" | "hold" | "exit">("enter");
+  const letters = ["P", "R", "Y", "M", "E"];
+
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) {
+      onDone();
+      return;
+    }
+
+    const holdTimer = window.setTimeout(() => setPhase("hold"), 1800);
+    const exitTimer = window.setTimeout(() => setPhase("exit"), 2600);
+    const doneTimer = window.setTimeout(() => onDone(), 3400);
+
+    return () => {
+      window.clearTimeout(holdTimer);
+      window.clearTimeout(exitTimer);
+      window.clearTimeout(doneTimer);
+    };
+  }, [onDone]);
+
+  return (
+    <div
+      className={`intro intro--${phase}`}
+      role="presentation"
+      aria-hidden="true"
+    >
+      <div className="intro-veil" />
+      <div className="intro-glow" />
+      <div className="intro-stage">
+        <div className="intro-line intro-line--top" />
+        <div className="intro-mark">
+          <div className="intro-crown-wrap">
+            <Crown className="intro-crown" />
+            <span className="intro-spark intro-spark--1" />
+            <span className="intro-spark intro-spark--2" />
+            <span className="intro-spark intro-spark--3" />
+          </div>
+          <div className="intro-word" aria-label="PRYME">
+            {letters.map((letter, i) => (
+              <span
+                key={letter}
+                className="intro-letter"
+                style={{ animationDelay: `${0.85 + i * 0.08}s` }}
+              >
+                {letter}
+              </span>
+            ))}
+          </div>
+          <p className="intro-tag">Built Different</p>
+        </div>
+        <div className="intro-line intro-line--bottom" />
+      </div>
+      <div className="intro-wipe intro-wipe--left" />
+      <div className="intro-wipe intro-wipe--right" />
+    </div>
+  );
+}
+
 export default function App() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -236,8 +297,15 @@ export default function App() {
   const [toast, setToast] = useState<string | null>(null);
   const [email, setEmail] = useState("");
   const [joined, setJoined] = useState(false);
+  const [showIntro, setShowIntro] = useState(true);
+  const [siteReady, setSiteReady] = useState(false);
 
   const cartCount = Object.values(cart).reduce((a, b) => a + b, 0);
+
+  const finishIntro = useCallback(() => {
+    setShowIntro(false);
+    setSiteReady(true);
+  }, []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -247,11 +315,11 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "";
+    document.body.style.overflow = showIntro || menuOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [menuOpen]);
+  }, [menuOpen, showIntro]);
 
   useEffect(() => {
     if (!toast) return;
@@ -275,7 +343,9 @@ export default function App() {
   }
 
   return (
-    <div className="site">
+    <div className={`site ${siteReady ? "is-ready" : "is-booting"}`}>
+      {showIntro ? <IntroSplash onDone={finishIntro} /> : null}
+
       <header className={`nav ${scrolled ? "is-scrolled" : ""}`}>
         <div className="nav-inner container">
           <a href="#top" className="nav-brand" onClick={() => setMenuOpen(false)}>
